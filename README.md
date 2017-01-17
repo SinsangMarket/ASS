@@ -9,14 +9,14 @@ Everyone is welcome to participate.
     <table>
         <tr>
             <td>
-                 <img src="https://github.com/wjdtncjs/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-46.png" width="200">
+                 <img src="https://github.com/SinsangMarket/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-46.png" width="200">
             </td>
             <td>
                  =>
 
             </td>
             <td>
-                <img src="https://github.com/wjdtncjs/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-08FROM_ASS.png" width="200">
+                <img src="https://github.com/SinsangMarket/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-08FROM_ASS.png" width="200">
 
             </td>
         <tr>
