@@ -26,7 +26,7 @@ Everyone is welcome to participate.
 
 ## Use
 * Android Remote Service
-* Content Observer (FileObserver not working on 6.0)
+* Content Observer (Using Content observer because FileObserver not working on 6.0)
 
 
 ## Output
@@ -34,7 +34,7 @@ Everyone is welcome to participate.
 * new file name will be created.
 
 ## Android version
-API14 ~ Recent
+API14 ~ API25 <br>
 tested : GalaxyS2, GalaxyS3, LG G4 etc..
 
 
