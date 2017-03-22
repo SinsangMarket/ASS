@@ -4,27 +4,15 @@ Android ScreenShot Service
 My first github project :)
 Everyone is welcome to participate.
 
-## Screenshot
-<div>
-    <table>
-        <tr>
-            <td>
-                 <img src="https://github.com/SinsangMarket/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-46.png" width="200">
-            </td>
-            <td>
-                 =>
+## Screenshot output
+* normal
+<img src="https://github.com/SinsangMarket/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-46.png?raw=true" width="500">
 
-            </td>
-            <td>
-                <img src="https://github.com/SinsangMarket/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-08FROM_ASS.png" width="200">
+* with watermark
+<img src="https://github.com/SinsangMarket/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-08FROM_ASS.png?raw=true" width="500">
+   
 
-            </td>
-        <tr>
-    </table>
-</div>
-    
-
-## Use
+## Usage comonent
 * Android Remote Service
 * Content Observer (Using Content observer because FileObserver not working on 6.0)
 
