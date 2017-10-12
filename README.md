@@ -28,7 +28,7 @@ recent usage video : https://www.youtube.com/watch?v=iLtDYKPe-cA&feature=youtu.b
 * new file name will be created.
 
 ## Android version
-API14 ~ API25 <br>
+API14 ~  <br>
 tested : GalaxyS2, GalaxyS3, LG G4 etc..
 
 
