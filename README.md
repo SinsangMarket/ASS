@@ -5,6 +5,12 @@ My first github project :)
 Everyone is welcome to participate.
 
 ## Screenshot output
+
+recent usage video : https://www.youtube.com/watch?v=iLtDYKPe-cA&feature=youtu.be
+
+
+<img src="https://github.com/SinsangMarket/ASS/blob/master/Images/device-2017-10-12-111614.png?raw=true" width="500">
+
 * normal
 <img src="https://github.com/SinsangMarket/ASS/blob/master/Images/Screenshot_2017-01-16-18-23-46.png?raw=true" width="500">
 
