@@ -25,6 +25,8 @@ public class ASS extends Service implements ScreenShotListener {
     private TimerTask mActivityTransitionTimerTask;
     private final long MAX_ACTIVITY_TRANSITION_TIME_MS = 3000;
 
+    private boolean screenshotEnable = true;
+
     @Override
     public IBinder onBind(Intent intent) {
         Log.e(TAG, "onBind");
@@ -65,7 +67,9 @@ public class ASS extends Service implements ScreenShotListener {
     public void onScreenshotTaken(Bitmap bitmap, String fileName) {
         try {
             Log.e(TAG, "onScreenshotTaken");
-            ScreenShotContentObserver.resultProcess(mContext, bitmap, fileName);
+            if (screenshotEnable) {
+                ScreenShotContentObserver.resultProcess(mContext, bitmap, fileName);
+            }
         } catch (Exception e) {
             Log.e(TAG, e.toString(), e);
         }
@@ -101,6 +105,11 @@ public class ASS extends Service implements ScreenShotListener {
                 Log.e(TAG, "mContentObserver.register");
                 mContentObserver.register();
             }
+        }
+
+        @Override
+        public void setScreenShotEnable(boolean enable) throws RemoteException {
+            screenshotEnable = enable;
         }
     };
 }

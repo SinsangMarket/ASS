@@ -13,10 +13,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.btnGoNext).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnGoWaterMark).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, ScreenshotNWatermarkActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnGoSaveNone).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DisableScreenshotActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnGoNormal).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NormalActivity.class);
                 startActivity(intent);
             }
         });

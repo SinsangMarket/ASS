@@ -28,7 +28,7 @@ import java.io.OutputStream;
 
 public class Util {
     public static int dpToPx(int dp) {
-        return (int) (TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics()) + 0.5f);// + 0.5f
+        return (int) (TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics()));
     }
 
     public static Bitmap getOverlayBitmap(Context context, Bitmap bitmap, String text) {
@@ -78,6 +78,9 @@ public class Util {
         OutputStream fOut = null;
         title = title.replaceAll(" ", "+");
         int index = title.lastIndexOf(".png");
+        if (index == -1) {
+            index = title.lastIndexOf(".jpg");
+        }
         String fileName = title.substring(0, index) + ScreenShotContentObserver.FILE_POSTFIX + ".png";
         final String appDirectoryName = "Screenshots";
         final File imageRoot = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), appDirectoryName);

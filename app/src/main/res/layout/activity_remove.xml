@@ -13,10 +13,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#55ff0000"
+        android:background="#550000ff"
         android:gravity="center"
         android:scaleType="centerCrop"
-        android:text="Screenshot + watermark"
+        android:text="Screenshot disable"
         android:textSize="30sp"
         android:textStyle="bold" />
 </RelativeLayout>

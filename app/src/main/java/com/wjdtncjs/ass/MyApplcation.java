@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.util.Log;
 
 import com.wjdtncjs.ass.service.ASS;
@@ -106,6 +107,14 @@ public class MyApplcation extends Application {
             }
         } catch (Exception e) {
             Log.e(TAG, e.toString(), e);
+            e.printStackTrace();
+        }
+    }
+
+    public void allowUserSaveScreenshot(boolean enable){
+        try {
+            mServiceBinder.setScreenShotEnable(enable);
+        } catch (RemoteException e) {
             e.printStackTrace();
         }
     }

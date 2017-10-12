@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wjdtncjs.ass">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name=".MyApplcation"
         android:allowBackup="true"
@@ -16,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.SecondActivity"></activity>
+        <activity android:name=".view.ScreenshotNWatermarkActivity" />
 
         <service
             android:name=".service.ASS"
@@ -25,8 +28,9 @@
                 <action android:name="abc.def.ghi" />
             </intent-filter>
         </service>
+
+        <activity android:name=".view.NormalActivity"></activity>
+        <activity android:name=".view.DisableScreenshotActivity"></activity>
     </application>
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>
